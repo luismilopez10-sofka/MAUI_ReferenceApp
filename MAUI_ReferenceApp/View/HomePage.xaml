@@ -29,7 +29,7 @@
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:MdlListTile">
                 <VerticalStackLayout>
-                    <HorizontalStackLayout Margin="20,23"
+                    <HorizontalStackLayout Padding="20,23"
                                            Spacing="30">
                         <HorizontalStackLayout.GestureRecognizers>
                             <TapGestureRecognizer CommandParameter="{Binding Title}"

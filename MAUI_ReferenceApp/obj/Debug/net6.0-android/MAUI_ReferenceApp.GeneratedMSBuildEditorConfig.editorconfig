@@ -33,11 +33,41 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.Resource
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/AlertPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.AlertPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\AlertPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\AlertPage.xaml
+
+[C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/BluetoothPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.BluetoothPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\BluetoothPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\BluetoothPage.xaml
+
+[C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/CameraGalleryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.CameraGalleryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\CameraGalleryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\CameraGalleryPage.xaml
+
+[C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/CardsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.CardsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\CardsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\CardsPage.xaml
+
 [C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/CollectionPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.CollectionPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\CollectionPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\CollectionPage.xaml
+
+[C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/GPSPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.GPSPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\GPSPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\GPSPage.xaml
 
 [C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -45,8 +75,32 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.Hom
 build_metadata.AdditionalFiles.TargetPath = View\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\HomePage.xaml
 
+[C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/InfiniteScrollPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.InfiniteScrollPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InfiniteScrollPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InfiniteScrollPage.xaml
+
 [C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\LoginPage.xaml
+
+[C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/SlidersChecksPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.SlidersChecksPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SlidersChecksPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SlidersChecksPage.xaml
+
+[C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/TextInputsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.TextInputsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TextInputsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TextInputsPage.xaml
+
+[C:/Users/luis.lopez/development/0_maui_projects/MAUI_ReferenceApp/MAUI_ReferenceApp/View/VolumenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI_ReferenceApp.View.VolumenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\VolumenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\VolumenPage.xaml

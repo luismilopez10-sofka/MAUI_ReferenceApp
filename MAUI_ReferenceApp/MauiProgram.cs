@@ -37,6 +37,42 @@ public static class MauiProgram
         builder.Services.AddSingleton<CollectionPage>();
         builder.Services.AddSingleton<CollectionViewModel>();
         builder.Services.AddSingleton<MonkeyService>();
+
+        // Alert
+        builder.Services.AddSingleton<AlertPage>();
+        builder.Services.AddSingleton<AlertViewModel>();
+
+        // Cards
+        builder.Services.AddSingleton<CardsPage>();
+        builder.Services.AddSingleton<CardsViewModel>();
+
+        // TextInputs
+        builder.Services.AddSingleton<TextInputsPage>();
+        builder.Services.AddSingleton<TextInputsViewModel>();
+
+        // SlidersChecks
+        builder.Services.AddSingleton<SlidersChecksPage>();
+        builder.Services.AddSingleton<SlidersChecksViewModel>();
+
+        // InfiniteScroll
+        builder.Services.AddSingleton<InfiniteScrollPage>();
+        builder.Services.AddSingleton<InfiniteScrollViewModel>();
+
+        // Volumen
+        builder.Services.AddSingleton<VolumenPage>();
+        builder.Services.AddSingleton<VolumenViewModel>();
+
+        // CameraGallery
+        builder.Services.AddSingleton<CameraGalleryPage>();
+        builder.Services.AddSingleton<CameraGalleryViewModel>();
+
+        // GPS
+        builder.Services.AddSingleton<GPSPage>();
+        builder.Services.AddSingleton<GPSViewModel>();
+
+        // Bluetooth
+        builder.Services.AddSingleton<BluetoothPage>();
+        builder.Services.AddSingleton<BluetoothViewModel>();
         #endregion
 
         return builder.Build();

@@ -6,23 +6,36 @@ namespace MAUI_ReferenceApp.ViewModel;
 public partial class HomeViewModel : BaseViewModel
 {
     #region VARIABLES
+    static Dictionary<string, string> screenNames = new Dictionary<string, string>()
+    {
+        {nameof(CollectionViewModel), "CollectionView"},
+        {nameof(AlertViewModel), "Alerts"},
+        {nameof(CardsViewModel), "Cards"},
+        //{nameof(CircleAvatarViewModel), "Circle Avatar"},
+        {nameof(TextInputsViewModel), "Text Inputs"},
+        {nameof(SlidersChecksViewModel), "Sliders and Checks"},
+        {nameof(InfiniteScrollViewModel), "Infinite Scroll and Pull Refresh"},
+        {nameof(VolumenViewModel), "Volumen"},
+        {nameof(CameraGalleryViewModel), "Camera and Gallery"},
+        {nameof(GPSViewModel), "GPS"},
+        {nameof(BluetoothViewModel), "Bluetooth"},
+    };
     #endregion
 
     #region PROPERTIES
     [ObservableProperty]
     private List<MdlListTile> screens = new List<MdlListTile>{
-        new MdlListTile(IconFont.List, "CollectionView"),
-        new MdlListTile(IconFont.Add_alert, "Alerts"),
-        new MdlListTile(IconFont.Credit_card, "Cards"),
-        new MdlListTile(IconFont.Supervised_user_circle, "Circle Avatar"),
-        new MdlListTile(IconFont.Input, "Text Inputs"),
-        new MdlListTile(IconFont.Slow_motion_video, "Sliders and Checks"),
-        new MdlListTile(IconFont.Build_circle, "Infinite Scroll and Pull Refresh"),
-        new MdlListTile(IconFont.Volume_up, "Volumen"),
-        new MdlListTile(IconFont.Camera, "Camera"),
-        new MdlListTile(IconFont.Gps_fixed, "GPS"),
-        new MdlListTile(IconFont.Bluetooth, "Bluetooth"),
-        new MdlListTile(IconFont.Photo_album, "Gallery"),
+        new MdlListTile(IconFont.List, screenNames[nameof(CollectionViewModel)]),
+        new MdlListTile(IconFont.Add_alert, screenNames[nameof(AlertViewModel)]),
+        new MdlListTile(IconFont.Credit_card, screenNames[nameof(CardsViewModel)]),
+        //new MdlListTile(IconFont.Supervised_user_circle, screenNames[nameof(CircleAvatarViewModel)]),
+        new MdlListTile(IconFont.Input, screenNames[nameof(TextInputsViewModel)]),
+        new MdlListTile(IconFont.Slow_motion_video, screenNames[nameof(SlidersChecksViewModel)]),
+        new MdlListTile(IconFont.Build_circle, screenNames[nameof(InfiniteScrollViewModel)]),
+        new MdlListTile(IconFont.Volume_up, screenNames[nameof(VolumenViewModel)]),
+        new MdlListTile(IconFont.Camera, screenNames[nameof(CameraGalleryViewModel)]),
+        new MdlListTile(IconFont.Gps_fixed, screenNames[nameof(GPSViewModel)]),
+        new MdlListTile(IconFont.Bluetooth, screenNames[nameof(BluetoothViewModel)]),
     };
     #endregion
 
@@ -37,29 +50,53 @@ public partial class HomeViewModel : BaseViewModel
     [RelayCommand]
     async Task GoToAsync(string screenName)
     {
-        switch (screenName)
+        if (screenName == screenNames[nameof(CollectionViewModel)])
         {
-            case "CollectionView":
-                await Shell.Current.GoToAsync($"{nameof(CollectionPage)}");
-                break;
-            case "Alerts":
-                await Shell.Current.GoToAsync($"{nameof(CollectionPage)}");
-                break;
-            case "Cards":
-                await Shell.Current.GoToAsync($"{nameof(CollectionPage)}");
-                break;
-            case "Circle Avatar":
-                await Shell.Current.GoToAsync($"{nameof(CollectionPage)}");
-                break;
-            case "Text Inputs":
-                await Shell.Current.GoToAsync($"{nameof(CollectionPage)}");
-                break;
-            case "Sliders and Checks":
-                await Shell.Current.GoToAsync($"{nameof(CollectionPage)}");
-                break;
-            case "Infinite Scroll and Pull Refresh":
-                await Shell.Current.GoToAsync($"{nameof(CollectionPage)}");
-                break;
+            await Shell.Current.GoToAsync($"{nameof(CollectionPage)}");
+        }
+        else if (screenName == screenNames[nameof(AlertViewModel)])
+        {
+            await Shell.Current.GoToAsync($"{nameof(AlertPage)}");
+        }
+        else if (screenName == screenNames[nameof(CardsViewModel)])
+        {
+            await Shell.Current.GoToAsync($"{nameof(CardsPage)}");
+        }
+        //else if (screenName == screenNames[nameof(CircleAvatarViewModel)])
+        //{
+        //    await Shell.Current.GoToAsync($"{nameof(CircleAvatarPage)}");
+        //}
+        else if (screenName == screenNames[nameof(TextInputsViewModel)])
+        {
+            await Shell.Current.GoToAsync($"{nameof(TextInputsPage)}");
+        }
+        else if (screenName == screenNames[nameof(SlidersChecksViewModel)])
+        {
+            await Shell.Current.GoToAsync($"{nameof(SlidersChecksPage)}");
+        }
+        else if (screenName == screenNames[nameof(InfiniteScrollViewModel)])
+        {
+            await Shell.Current.GoToAsync($"{nameof(InfiniteScrollPage)}");
+        }
+        else if (screenName == screenNames[nameof(VolumenViewModel)])
+        {
+            await Shell.Current.GoToAsync($"{nameof(VolumenPage)}");
+        }
+        else if (screenName == screenNames[nameof(CameraGalleryViewModel)])
+        {
+            await Shell.Current.GoToAsync($"{nameof(CameraGalleryPage)}");
+        }
+        else if (screenName == screenNames[nameof(GPSViewModel)])
+        {
+            await Shell.Current.GoToAsync($"{nameof(GPSPage)}");
+        }
+        else if (screenName == screenNames[nameof(BluetoothViewModel)])
+        {
+            await Shell.Current.GoToAsync($"{nameof(BluetoothPage)}");
+        } 
+        else
+        {
+            await Shell.Current.DisplayAlert("Info", "In Progress", "OK");
         }
     }
     #endregion

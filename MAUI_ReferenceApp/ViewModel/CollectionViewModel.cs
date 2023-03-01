@@ -16,7 +16,7 @@ public partial class CollectionViewModel : BaseViewModel
     #region CONSTRUCTORS
     public CollectionViewModel(MonkeyService monkeyService)
     {
-        Title = "Collections";
+        Title = "CollectionView";
         this.monkeyService = monkeyService;
     }
     #endregion
