@@ -25,8 +25,8 @@ public static class MauiProgram
          */
 
         // Login
-        builder.Services.AddTransient<LoginPage>();
-        builder.Services.AddTransient<LoginViewModel>();
+        builder.Services.AddSingleton<LoginPage>();
+        builder.Services.AddSingleton<LoginViewModel>();
         builder.Services.AddSingleton<LoginService>();
 
         // Home
@@ -36,6 +36,7 @@ public static class MauiProgram
         // Collection
         builder.Services.AddSingleton<CollectionPage>();
         builder.Services.AddSingleton<CollectionViewModel>();
+        builder.Services.AddSingleton<MonkeyService>();
         #endregion
 
         return builder.Build();

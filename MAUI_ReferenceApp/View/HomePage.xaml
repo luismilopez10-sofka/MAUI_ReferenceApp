@@ -3,30 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:helpers="clr-namespace:MAUI_ReferenceApp.Helpers"
              x:Class="MAUI_ReferenceApp.View.HomePage"
+             xmlns:model="clr-namespace:MAUI_ReferenceApp.Model"
              xmlns:viewmodel="clr-namespace:MAUI_ReferenceApp.ViewModel"
              x:DataType="viewmodel:HomeViewModel"
              Title="{Binding Title}">
     <CollectionView ItemsSource="{Binding Screens}">
         <!--<CollectionView.ItemsSource>
-            <x:Array Type="{x:Type viewmodel:ListTile}">
-                <viewmodel:ListTile Icon="{x:Static helpers:IconFont.List}"
+            <x:Array Type="{x:Type model:MdlListTile}">
+                <model:MdlListTile Icon="{x:Static helpers:IconFont.List}"
                                     Title="CollectionView" />
-                <viewmodel:ListTile Icon="{x:Static helpers:IconFont.Add_alert}"
+                <model:MdlListTile Icon="{x:Static helpers:IconFont.Add_alert}"
                                     Title="Alerts" />
-                <viewmodel:ListTile Icon="{x:Static helpers:IconFont.Credit_card}"
+                <model:MdlListTile Icon="{x:Static helpers:IconFont.Credit_card}"
                                     Title="Cards" />
-                <viewmodel:ListTile Icon="{x:Static helpers:IconFont.Supervised_user_circle}"
+                <model:MdlListTile Icon="{x:Static helpers:IconFont.Supervised_user_circle}"
                                     Title="Circle Avatar" />
-                <viewmodel:ListTile Icon="{x:Static helpers:IconFont.Input}"
+                <model:MdlListTile Icon="{x:Static helpers:IconFont.Input}"
                                     Title="Text Inputs" />
-                <viewmodel:ListTile Icon="{x:Static helpers:IconFont.Slow_motion_video}"
+                <model:MdlListTile Icon="{x:Static helpers:IconFont.Slow_motion_video}"
                                     Title="Sliders and Checks" />
-                <viewmodel:ListTile Icon="{x:Static helpers:IconFont.Build_circle}"
+                <model:MdlListTile Icon="{x:Static helpers:IconFont.Build_circle}"
                                     Title="Infinite Scroll and Pull Refresh" />
             </x:Array>
         </CollectionView.ItemsSource>-->
         <CollectionView.ItemTemplate>
-            <DataTemplate x:DataType="viewmodel:ListTile">
+            <DataTemplate x:DataType="model:MdlListTile">
                 <VerticalStackLayout>
                     <HorizontalStackLayout Margin="20,23"
                                            Spacing="30">

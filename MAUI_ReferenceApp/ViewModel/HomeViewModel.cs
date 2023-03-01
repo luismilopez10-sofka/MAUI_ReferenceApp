@@ -10,19 +10,19 @@ public partial class HomeViewModel : BaseViewModel
 
     #region PROPERTIES
     [ObservableProperty]
-    private List<ListTile> screens = new List<ListTile>{
-        new ListTile(IconFont.List, "CollectionView"),
-        new ListTile(IconFont.Add_alert, "Alerts"),
-        new ListTile(IconFont.Credit_card, "Cards"),
-        new ListTile(IconFont.Supervised_user_circle, "Circle Avatar"),
-        new ListTile(IconFont.Input, "Text Inputs"),
-        new ListTile(IconFont.Slow_motion_video, "Sliders and Checks"),
-        new ListTile(IconFont.Build_circle, "Infinite Scroll and Pull Refresh"),
-        new ListTile(IconFont.Volume_up, "Volumen"),
-        new ListTile(IconFont.Camera, "Camera"),
-        new ListTile(IconFont.Gps_fixed, "GPS"),
-        new ListTile(IconFont.Bluetooth, "Bluetooth"),
-        new ListTile(IconFont.Photo_album, "Gallery"),
+    private List<MdlListTile> screens = new List<MdlListTile>{
+        new MdlListTile(IconFont.List, "CollectionView"),
+        new MdlListTile(IconFont.Add_alert, "Alerts"),
+        new MdlListTile(IconFont.Credit_card, "Cards"),
+        new MdlListTile(IconFont.Supervised_user_circle, "Circle Avatar"),
+        new MdlListTile(IconFont.Input, "Text Inputs"),
+        new MdlListTile(IconFont.Slow_motion_video, "Sliders and Checks"),
+        new MdlListTile(IconFont.Build_circle, "Infinite Scroll and Pull Refresh"),
+        new MdlListTile(IconFont.Volume_up, "Volumen"),
+        new MdlListTile(IconFont.Camera, "Camera"),
+        new MdlListTile(IconFont.Gps_fixed, "GPS"),
+        new MdlListTile(IconFont.Bluetooth, "Bluetooth"),
+        new MdlListTile(IconFont.Photo_album, "Gallery"),
     };
     #endregion
 
@@ -63,20 +63,4 @@ public partial class HomeViewModel : BaseViewModel
         }
     }
     #endregion
-}
-
-public class ListTile
-{
-    public string Icon { get; set; }
-    public string Title { get; set; }
-
-    public ListTile()
-    {
-    }
-
-    public ListTile(string icon, string title)
-    {
-        Icon = icon;
-        Title = title;
-    }
 }

@@ -150,6 +150,12 @@
         <member name="P:MAUI_ReferenceApp.ViewModel.BaseViewModel.Title">
             <inheritdoc cref="F:MAUI_ReferenceApp.ViewModel.BaseViewModel.title"/>
         </member>
+        <member name="F:MAUI_ReferenceApp.ViewModel.CollectionViewModel.getMonkeysCommand">
+            <summary>The backing field for <see cref="P:MAUI_ReferenceApp.ViewModel.CollectionViewModel.GetMonkeysCommand"/>.</summary>
+        </member>
+        <member name="P:MAUI_ReferenceApp.ViewModel.CollectionViewModel.GetMonkeysCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:MAUI_ReferenceApp.ViewModel.CollectionViewModel.GetMonkeysAsync"/>.</summary>
+        </member>
         <member name="P:MAUI_ReferenceApp.ViewModel.HomeViewModel.Screens">
             <inheritdoc cref="F:MAUI_ReferenceApp.ViewModel.HomeViewModel.screens"/>
         </member>

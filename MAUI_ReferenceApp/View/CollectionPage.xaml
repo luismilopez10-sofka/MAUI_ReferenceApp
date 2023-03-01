@@ -6,6 +6,53 @@
              xmlns:viewmodel="clr-namespace:MAUI_ReferenceApp.ViewModel"
              x:DataType="viewmodel:CollectionViewModel"
              Title="{Binding Title}">
+    <Grid ColumnDefinitions="*,*"
+          ColumnSpacing="5"
+          RowDefinitions="*,Auto"
+          RowSpacing="0">
+        <CollectionView Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Monkeys}"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:MdlMonkey">
+                    <Grid Padding="10">
+                        <Frame HeightRequest="125"
+                               Style="{StaticResource CardView}">
+                            <Grid Padding="0"
+                                  ColumnDefinitions="125,*">
+                                <Image Aspect="AspectFill"
+                                       Source="{Binding Image}"
+                                       WidthRequest="125"
+                                       HeightRequest="125" />
+                                <VerticalStackLayout VerticalOptions="Center"
+                                                     Grid.Column="1"
+                                                     Padding="10">
+                                    <Label Style="{StaticResource LargeLabel}"
+                                           Text="{Binding Name}" />
+                                    <Label Style="{StaticResource MediumLabel}"
+                                           Text="{Binding Location}" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Get Monkeys"
+                Command="{Binding GetMonkeysCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                Grid.Row="1"
+                Grid.Column="0"
+                Style="{StaticResource ButtonOutline}"
+                Margin="8" />
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Center"
+                           Color="{StaticResource Primary}"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2" />
+    </Grid>
     <!--<Grid ColumnDefinitions="*,*"
           ColumnSpacing="5"
           RowDefinitions="*,Auto"
@@ -16,7 +63,7 @@
             <ContentView>
                 <CollectionView ItemsSource="{Binding Monkeys}"
                                 SelectionMode="None">
-                    --><!--<CollectionView.EmptyView>
+                    <CollectionView.EmptyView>
                         <StackLayout Padding="100">
                             <Image
                                 HorizontalOptions="Center"
@@ -28,9 +75,9 @@
                     </CollectionView.EmptyView>
                     <CollectionView.ItemsLayout>
                         <GridItemsLayout  Orientation="Horizontal" Span="3"/>
-                    </CollectionView.ItemsLayout>--><!--
+                    </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
-                        <DataTemplate x:DataType="model:Monkey">
+                        <DataTemplate x:DataType="model:MdlMonkey">
                             <Grid Padding="10">
                                 <Frame HeightRequest="125"
                                        Style="{StaticResource CardView}">
