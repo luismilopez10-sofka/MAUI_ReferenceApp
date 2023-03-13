@@ -15,18 +15,18 @@
                         SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:MdlMonkey">
-                    <Grid Padding="10">
-                        <Frame HeightRequest="125"
+                    <Grid Padding="7,5">
+                        <Frame HeightRequest="80"
                                Style="{StaticResource CardView}">
                             <Grid Padding="0"
-                                  ColumnDefinitions="125,*">
+                                  ColumnDefinitions="80,*">
                                 <Image Aspect="AspectFill"
                                        Source="{Binding Image}"
-                                       WidthRequest="125"
-                                       HeightRequest="125" />
+                                       WidthRequest="80"
+                                       HeightRequest="80" />
                                 <VerticalStackLayout VerticalOptions="Center"
                                                      Grid.Column="1"
-                                                     Padding="10">
+                                                     Padding="20,0">
                                     <Label Style="{StaticResource LargeLabel}"
                                            Text="{Binding Name}" />
                                     <Label Style="{StaticResource MediumLabel}"

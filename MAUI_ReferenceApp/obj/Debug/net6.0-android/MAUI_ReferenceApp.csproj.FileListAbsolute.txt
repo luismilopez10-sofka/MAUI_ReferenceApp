@@ -1,3 +1,11 @@
+C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\MAUI_ReferenceApp.runtimeconfig.json
+C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\MAUI_ReferenceApp.dll
+C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\MAUI_ReferenceApp.pdb
+C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp.apk
+C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp.aab
+C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp-Signed.aab
+C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp-Signed.apk
+C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp-Signed.apk.idsig
 C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\obj\Debug\net6.0-android\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
 C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\obj\Debug\net6.0-android\build.props
 C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\obj\Debug\net6.0-android\adb.props
@@ -96,14 +104,6 @@ C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_Reference
 C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\obj\Debug\net6.0-android\MAUI_ReferenceApp.AssemblyInfoInputs.cache
 C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\obj\Debug\net6.0-android\MAUI_ReferenceApp.AssemblyInfo.cs
 C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\obj\Debug\net6.0-android\MAUI_ReferenceApp.csproj.CoreCompileInputs.cache
-C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\MAUI_ReferenceApp.runtimeconfig.json
-C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\MAUI_ReferenceApp.dll
-C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\MAUI_ReferenceApp.pdb
-C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp.apk
-C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp.aab
-C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp-Signed.aab
-C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp-Signed.apk
-C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\bin\Debug\net6.0-android\com.sofka.maui_referenceapp-Signed.apk.idsig
 C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\obj\Debug\net6.0-android\XamlC.stamp
 C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\obj\Debug\net6.0-android\MAUI_ReferenceApp.dll
 C:\Users\luis.lopez\development\0_maui_projects\MAUI_ReferenceApp\MAUI_ReferenceApp\obj\Debug\net6.0-android\MAUI_ReferenceApp.pdb

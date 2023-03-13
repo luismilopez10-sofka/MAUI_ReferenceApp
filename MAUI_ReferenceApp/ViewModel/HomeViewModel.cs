@@ -13,10 +13,10 @@ public partial class HomeViewModel : BaseViewModel
         {nameof(CardsViewModel), "Cards"},
         //{nameof(CircleAvatarViewModel), "Circle Avatar"},
         {nameof(TextInputsViewModel), "Text Inputs"},
-        {nameof(SlidersChecksViewModel), "Sliders and Checks"},
-        {nameof(InfiniteScrollViewModel), "Infinite Scroll and Pull Refresh"},
+        {nameof(SlidersChecksViewModel), "Sliders & Checks"},
+        {nameof(InfiniteScrollViewModel), "Infinite Scroll & Pull Refresh"},
         {nameof(VolumenViewModel), "Volumen"},
-        {nameof(CameraGalleryViewModel), "Camera and Gallery"},
+        {nameof(CameraGalleryViewModel), "Camera & Gallery"},
         {nameof(GPSViewModel), "GPS"},
         {nameof(BluetoothViewModel), "Bluetooth"},
     };
@@ -42,7 +42,7 @@ public partial class HomeViewModel : BaseViewModel
     #region CONSTRUCTORS
     public HomeViewModel()
     {
-        Title = "Home";
+        Title = "Componentes en MAUI";
     }
     #endregion
 

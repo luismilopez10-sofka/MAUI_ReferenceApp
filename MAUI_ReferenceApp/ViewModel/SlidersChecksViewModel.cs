@@ -6,15 +6,24 @@ public partial class SlidersChecksViewModel : BaseViewModel
     #endregion
 
     #region PROPERTIES
+    [ObservableProperty]
+    private bool enableSetImageSize = false;
+    [ObservableProperty]
+    private double imageSize = 1;
     #endregion
 
     #region CONSTRUCTORS
     public SlidersChecksViewModel()
     {
-        Title = "Sliders and Checks";
+        Title = "Sliders & Checks";
     }
     #endregion
 
     #region COMMANDS
+    [RelayCommand]
+    public void PrintImageSize()
+    {
+        Debug.WriteLine(ImageSize);
+    }
     #endregion
 }

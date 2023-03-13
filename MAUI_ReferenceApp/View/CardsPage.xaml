@@ -1,15 +1,116 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helpers="clr-namespace:MAUI_ReferenceApp.Helpers"
              x:Class="MAUI_ReferenceApp.View.CardsPage"
              xmlns:model="clr-namespace:MAUI_ReferenceApp.Model"
              xmlns:viewmodel="clr-namespace:MAUI_ReferenceApp.ViewModel"
              x:DataType="viewmodel:CardsViewModel"
              Title="{Binding Title}">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+    <Grid RowDefinitions="Auto, *">
+        
+        <!-- Tarjeta de información -->
+        <Frame Grid.Row="0"
+               Margin="10,5"
+               Padding="0"
+               VerticalOptions="Start">
+            <HorizontalStackLayout Padding="20,10">
+                <Image HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       Margin="0,10">
+                    <Image.Source>
+                        <FontImageSource FontFamily="IconFontTypes"
+                                         Glyph="{x:Static helpers:IconFont.Photo_album}"
+                                         Size="23"
+                                         Color="{StaticResource Tertiary}" />
+                    </Image.Source>
+                </Image>
+                <!-- Título, subtítulo y botones -->
+                <VerticalStackLayout Margin="30,0"
+                                     WidthRequest="285"
+                                     Spacing="3">
+                    <Label Style="{StaticResource MediumLabel}"
+                           FontAttributes="Bold"
+                           Text="Soy un título" />
+                    <Label Style="{StaticResource SmallLabel}"
+                           LineBreakMode="CharacterWrap"
+                           TextColor="Grey"
+                           LineHeight="0.85"
+                           Text="Veniam officia pariatur commodo ullamco eiusmod mollit exercitation. Excepteur laboris consequat non adipisicing. Nostrud labore magna adipisicing dolore." />
+                    <!-- Botones "Ok" y "Cancel" -->
+                    <HorizontalStackLayout HorizontalOptions="End"
+                                           Margin="0,5,0,0">
+                        <Button Text="Cancel"
+                                FontAttributes="Bold"
+                                FontSize="13"
+                                BackgroundColor="Transparent"
+                                TextColor="{StaticResource Tertiary}">
+                            <Button.Triggers>
+                                <Trigger TargetType="Button"
+                                         Property="IsPressed"
+                                         Value="True">
+                                    <Setter Property="BackgroundColor"
+                                            Value="#D4D8EE" />
+                                </Trigger>
+                            </Button.Triggers>
+                        </Button>
+                        <Button Text="Ok"
+                                FontAttributes="Bold"
+                                FontSize="13"
+                                BackgroundColor="Transparent"
+                                WidthRequest="60"
+                                TextColor="{StaticResource Tertiary}">
+                            <Button.Triggers>
+                                <Trigger TargetType="Button"
+                                         Property="IsPressed"
+                                         Value="True">
+                                    <Setter Property="BackgroundColor"
+                                            Value="#D4D8EE" />
+                                </Trigger>
+                            </Button.Triggers>
+                        </Button>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+        <!-- Tarjetas de imágenes -->
+        <CollectionView Grid.Row="1">
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>https://predios.com.co/wp-content/uploads/2021/06/travel-landscape-01.jpg</x:String>
+                    <x:String>https://cdn3.dpmag.com/2021/07/Landscape-Tips-Mike-Mezeul-II.jpg</x:String>
+                    <x:String>https://cdn.wallpapersafari.com/23/69/Ob7tUB.jpg</x:String>
+                    <x:String>https://www.aaronreedphotography.com/images/xl/Let-There-Be-Light-1800.jpg</x:String>
+                    <x:String>https://rioslandscapingtree.files.wordpress.com/2021/09/114310.jpg</x:String>
+                    <x:String>https://mymodernmet.com/wp/wp-content/uploads/2020/11/International-Landscape-Photographer-Year-PhotographER-1st-KelvinYuen-2.jpg</x:String>
+                    <!-- Los siguientes strings tienen el caracter "&", para corregie el error se debe reemplazar por "&amp;" -->
+                    <x:String>https://media-exp1.licdn.com/dms/image/C4D1BAQFsdjpzrtQWUA/company-background_10000/0/1519796755846?e=2147483647&amp;v=beta&amp;t=tA2WEp7x9015ge1Px-zpkFFUueL-uskh1SlXHTBCXrM</x:String>
+                    <x:String>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwcUYIIUx_4N5ceeHDtW-kBy6mViLSI980g&amp;usqp=CAU</x:String>
+                </x:Array>
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout>
+                        <Frame Margin="10,10"
+                               Padding="0"
+                               VerticalOptions="Start"
+                               CornerRadius="18"
+                               HeightRequest="245"
+                               HasShadow="True">
+                            <Image Source="{Binding .}"
+                                   Aspect="AspectFill"/>
+                        </Frame>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <ActivityIndicator BackgroundColor="Transparent"
+                           Grid.RowSpan="2"
+                           Color="{StaticResource Gray300}"
+                           HorizontalOptions="CenterAndExpand"
+                           IsRunning="{Binding IsBusy}"
+                           IsVisible="{Binding IsBusy}"
+                           VerticalOptions="CenterAndExpand" />
+    </Grid>
 </ContentPage>

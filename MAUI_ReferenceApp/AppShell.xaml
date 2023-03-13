@@ -2,8 +2,7 @@
 <Shell x:Class="MAUI_ReferenceApp.AppShell"
        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-       xmlns:local="clr-namespace:MAUI_ReferenceApp.View"
-       Shell.FlyoutBehavior="Flyout">
+       xmlns:local="clr-namespace:MAUI_ReferenceApp.View">
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle"
@@ -180,18 +179,27 @@
         </FlyoutItem.Icon>
         <ShellContent ContentTemplate="{DataTemplate local:HomePage}" Route="HomePage" />
     </FlyoutItem>-->
+    
     <!--<ShellItem Route="LoginPage"
                FlyoutItemIsVisible="False">
         <ShellContent Shell.NavBarIsVisible="False"
                       Shell.FlyoutBehavior="Disabled"
-                      Title="MAUI Template"
+                      Title="Login"
                       ContentTemplate="{DataTemplate local:LoginPage}"
                       Route="LoginPage" />
-        <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Shell.NavBarIsVisible="False"
+                      Title="Alert Page"
+                      ContentTemplate="{DataTemplate local:AlertPage}"
+                      Route="AlertPage" />
     </ShellItem>-->
+    
+    
     <ShellContent Shell.NavBarIsVisible="False"
                   Shell.FlyoutBehavior="Disabled"
                   Title="MAUI Template"
                   ContentTemplate="{DataTemplate local:LoginPage}"
                   Route="LoginPage" />
+    <!--<ShellContent Shell.NavBarIsVisible="False"
+                  ContentTemplate="{DataTemplate local:AlertPage}"
+                  Route="AlertPage" />-->
 </Shell>

@@ -11,7 +11,7 @@ public partial class CameraGalleryViewModel : BaseViewModel
     #region CONSTRUCTORS
     public CameraGalleryViewModel()
     {
-        Title = "Camera and Gallery";
+        Title = "Camera & Gallery";
     }
     #endregion
 

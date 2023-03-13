@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helpers="clr-namespace:MAUI_ReferenceApp.Helpers"
              x:Class="MAUI_ReferenceApp.View.AlertPage"
              xmlns:model="clr-namespace:MAUI_ReferenceApp.Model"
              xmlns:viewmodel="clr-namespace:MAUI_ReferenceApp.ViewModel"
              x:DataType="viewmodel:AlertViewModel"
              Title="{Binding Title}">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ContentPage.Resources>
+        <OnPlatform x:TypeArguments="x:String"
+                    x:Key="MaterialIcons">
+            <On Platform="Android"
+                Value="Resources/Fonts/MaterialIcons-Regular.ttf" />
+            <On Platform="iOS"
+                Value="MaterialIcons" />
+        </OnPlatform>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="*, Auto">
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>-->
+        <StackLayout Grid.Row="0"
+                     HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            <Button Text="Mostrar alerta"
+                    BackgroundColor="{StaticResource Tertiary}"
+                    WidthRequest="160"
+                    HeightRequest="45"
+                    CornerRadius="45"
+                    Command="{Binding ShowAlertCommand}" />
+        </StackLayout>
+        <StackLayout Grid.Row="1"
+                     VerticalOptions="End"
+                     HorizontalOptions="End">
+            <!--<Button Text="{x:Static helpers:IconFont.Close}"
+                    FontFamily="{StaticResource MaterialIcons}"
+                    FontSize="25"
+                    Margin="0,0,10,10"
+                    BackgroundColor="{StaticResource PrimaryDisabled}"
+                    IsEnabled="False"
+                    WidthRequest="56"
+                    HeightRequest="56"
+                    CornerRadius="28" />-->
+            <Button Text="X"
+                    FontSize="20"
+                    Margin="0,0,10,10"
+                    BackgroundColor="{StaticResource Tertiary}"
+                    WidthRequest="56"
+                    HeightRequest="56"
+                    CornerRadius="28"
+                    Command="{Binding GoBackCommand}"/>
+        </StackLayout>
+    </Grid>
 </ContentPage>
